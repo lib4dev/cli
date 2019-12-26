@@ -27,7 +27,7 @@ func (a *App) Start() {
 }
 
 //New 创建app
-func (a *App) New(opts ...Option) *App {
+func New(opts ...Option) *App {
 	app := &App{log: logs.New(), option: &option{version: VERSION}}
 
 	for _, opt := range opts {
