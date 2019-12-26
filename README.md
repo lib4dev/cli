@@ -4,8 +4,11 @@
 
 #### 一、创建cli app
 ```go
-var app=cli.New(cli.WithVersion("0.1.0"))
-app.Start()
+func main(){
+    var app=cli.New(cli.WithVersion("0.1.0"))
+    app.Start()
+}
+
 
 ```
 
