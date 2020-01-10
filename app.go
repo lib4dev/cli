@@ -28,14 +28,15 @@ func (a *App) Start() {
 
 //New 创建app
 func New(opts ...Option) *App {
-	app := &App{log: logs.New(), option: &option{version: VERSION}}
 
+	app := &App{log: logs.New(), option: &option{version: VERSION}}
 	for _, opt := range opts {
 		opt(app.option)
 	}
 
 	app.app = cli.NewApp()
 	app.app.Name = filepath.Base(os.Args[0])
+	app.app.Version = app.version
 	cli.HelpFlag = cli.BoolFlag{
 		Name:  "help,h",
 		Usage: "查看帮助信息",
