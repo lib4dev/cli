@@ -29,7 +29,7 @@ func (a *App) Start() {
 //New 创建app
 func New(opts ...Option) *App {
 
-	app := &App{log: logs.New(), option: &option{version: VERSION}}
+	app := &App{log: logs.New(), option: &option{version: VERSION, usage: "A new cli application"}}
 	for _, opt := range opts {
 		opt(app.option)
 	}
@@ -37,6 +37,7 @@ func New(opts ...Option) *App {
 	app.app = cli.NewApp()
 	app.app.Name = filepath.Base(os.Args[0])
 	app.app.Version = app.version
+	app.app.Usage = app.usage
 	cli.HelpFlag = cli.BoolFlag{
 		Name:  "help,h",
 		Usage: "查看帮助信息",
