@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/micro-plat/cli/cmds"
-	"github.com/micro-plat/cli/logs"
+	"github.com/lib4dev/cli/cmds"
+	"github.com/lib4dev/cli/logs"
 	"github.com/urfave/cli"
 )
 
