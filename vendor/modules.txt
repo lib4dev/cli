@@ -1,14 +1,7 @@
 # github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d
 github.com/cpuguy83/go-md2man/v2/md2man
-# github.com/micro-plat/lib4go v0.3.1
+# github.com/mattn/go-sqlite3 v1.11.0
 ## explicit
-github.com/micro-plat/lib4go/concurrent/cmap
-github.com/micro-plat/lib4go/file
-github.com/micro-plat/lib4go/jsons
-github.com/micro-plat/lib4go/logger
-github.com/micro-plat/lib4go/net
-github.com/micro-plat/lib4go/security/md5
-github.com/micro-plat/lib4go/utility
 # github.com/russross/blackfriday/v2 v2.0.1
 github.com/russross/blackfriday/v2
 # github.com/shurcooL/sanitized_anchor_name v1.0.0
